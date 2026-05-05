@@ -9,9 +9,11 @@ import Countdown from "./components/Countdown";
 import Gallery from "./components/Gallery";
 import RSVPForm from "./components/RSVPForm";
 import Footer from "./components/Footer";
+import AdminDashboard from "./components/AdminDashboard";
 import { motion, useScroll, useSpring } from "motion/react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-export default function App() {
+function Home() {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -54,3 +56,15 @@ export default function App() {
     </div>
   );
 }
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/admin" element={<AdminDashboard />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
