@@ -14,8 +14,19 @@ export default function Footer() {
         <a href="#" className="hover:text-accent transition-colors">Est. 2026</a>
       </div>
 
-      <div className="pt-20 opacity-30">
+      <div className="pt-20 opacity-30 space-y-1">
         <p className="font-sans text-[9px] uppercase tracking-widest">Designed with Joy for a Bright Future</p>
+        <p className="font-sans text-[9px] uppercase tracking-widest">
+          by{' '}
+          <a
+            href="https://wa.me/?text=Hello%20Eyasu%20Lingerih"
+            target="_blank"
+            rel="noreferrer"
+            className="underline hover:text-accent transition-colors"
+          >
+            Eyasu Lingerih
+          </a>
+        </p>
       </div>
     </footer>
   );
