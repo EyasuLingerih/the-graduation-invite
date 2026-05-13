@@ -25,7 +25,7 @@ const details = [
 
 export default function EventDetails() {
   return (
-    <section className="py-24 px-6 max-w-7xl mx-auto">
+    <section className="py-24 px-6 max-w-7xl mx-auto space-y-12">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {details.map((item, index) => (
           <motion.div
@@ -57,6 +57,40 @@ export default function EventDetails() {
           </motion.div>
         ))}
       </div>
+
+      {/* Map */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="rounded-3xl overflow-hidden border border-accent/10 shadow-sm"
+      >
+        <iframe
+          title="Osseo Community Center"
+          src="https://www.google.com/maps?q=415+Central+Ave,+Osseo,+MN+55369&output=embed"
+          width="100%"
+          height="400"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+        <div className="bg-white px-6 py-4 flex items-center justify-between">
+          <div>
+            <p className="font-serif text-lg">Osseo Community Center</p>
+            <p className="font-sans text-xs text-primary/40">415 Central Ave, Osseo, MN 55369</p>
+          </div>
+          <a
+            href="https://maps.app.goo.gl/jtDLEPkK369fzcd26"
+            target="_blank"
+            rel="noreferrer"
+            className="font-sans text-xs uppercase tracking-widest font-semibold text-accent hover:underline"
+          >
+            Open in Maps
+          </a>
+        </div>
+      </motion.div>
     </section>
   );
 }

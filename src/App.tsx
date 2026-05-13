@@ -6,7 +6,6 @@
 import Hero from "./components/Hero";
 import EventDetails from "./components/EventDetails";
 import Countdown from "./components/Countdown";
-import Gallery from "./components/Gallery";
 import RSVPForm from "./components/RSVPForm";
 import Footer from "./components/Footer";
 import AdminDashboard from "./components/AdminDashboard";
@@ -47,8 +46,7 @@ function Home() {
         <div className="space-y-40">
           <EventDetails />
           <Countdown />
-          <Gallery />
-          <RSVPForm />
+<RSVPForm />
         </div>
       </main>
 
