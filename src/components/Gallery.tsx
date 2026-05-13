@@ -14,11 +14,6 @@ const photos = [
 export default function Gallery() {
   return (
     <section className="py-24 px-4 max-w-7xl mx-auto">
-      <div className="text-center mb-16 space-y-4">
-        <h2 className="font-serif text-4xl md:text-6xl italic">Memories from the Journey</h2>
-        <div className="h-[1px] w-24 bg-accent/30 mx-auto" />
-      </div>
-
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[280px]">
         {photos.map((photo, index) => (
           <motion.div
