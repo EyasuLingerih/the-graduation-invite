@@ -61,10 +61,9 @@ export default function Hero() {
           <div className="absolute -inset-2 bg-accent/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
           <div className="relative w-48 h-48 md:w-64 md:h-64 mx-auto rounded-full overflow-hidden border-2 border-accent/20 p-2 bg-white">
             <img
-              src="https://picsum.photos/seed/grad2026/800/800"
-              alt="Graduate Portrait"
-              className="w-full h-full object-cover rounded-full"
-              referrerPolicy="no-referrer"
+              src="/img/grad-02.jpg"
+              alt="Julian Roberts"
+              className="w-full h-full object-cover object-top rounded-full"
             />
           </div>
         </motion.div>

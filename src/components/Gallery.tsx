@@ -1,12 +1,14 @@
 import { motion } from "motion/react";
 
 const photos = [
-  { url: "https://picsum.photos/seed/mem1/800/1000", span: "row-span-2" },
-  { url: "https://picsum.photos/seed/mem2/800/600", span: "row-span-1" },
-  { url: "https://picsum.photos/seed/mem3/800/600", span: "row-span-1" },
-  { url: "https://picsum.photos/seed/mem4/800/1000", span: "row-span-2" },
-  { url: "https://picsum.photos/seed/mem5/800/600", span: "row-span-1" },
-  { url: "https://picsum.photos/seed/mem6/800/600", span: "row-span-1" },
+  { url: "/img/grad-03.jpg", span: "row-span-2" },
+  { url: "/img/grad-01.jpg", span: "row-span-2" },
+  { url: "/img/grad-05.jpg", span: "row-span-2" },
+  { url: "/img/grad-06.jpg", span: "row-span-2" },
+  { url: "/img/grad-04.jpg", span: "row-span-2" },
+  { url: "/img/grad-07.jpg", span: "row-span-2" },
+  { url: "/img/grad-14.jpg", span: "row-span-2" },
+  { url: "/img/grad-08.jpg", span: "row-span-2" },
 ];
 
 export default function Gallery() {
@@ -17,7 +19,7 @@ export default function Gallery() {
         <div className="h-[1px] w-24 bg-accent/30 mx-auto" />
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[280px]">
         {photos.map((photo, index) => (
           <motion.div
             key={index}
