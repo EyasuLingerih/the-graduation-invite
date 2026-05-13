@@ -66,7 +66,7 @@ export default function RSVPForm() {
       <div className="max-w-xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-serif text-4xl md:text-5xl mb-4">RSVP</h2>
-          <p className="font-sans text-sm text-primary/60 font-light italic">Please kindly respond by June 1st.</p>
+          <p className="font-sans text-sm text-primary/60 font-light italic">Please kindly respond by June 1st, 2026.</p>
         </div>
 
         <AnimatePresence mode="wait">

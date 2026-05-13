@@ -45,7 +45,7 @@ export default function Hero() {
 
         <h1 className="font-serif text-5xl md:text-8xl lg:text-9xl font-light leading-tight">
           The Graduation of <br />
-          <span className="italic gradient-text">Julian Roberts</span>
+          <span className="italic gradient-text">Samuel Zean III</span>
         </h1>
 
         <p className="font-sans text-sm md:text-base font-light tracking-wide opacity-70 max-w-lg mx-auto">
@@ -62,7 +62,7 @@ export default function Hero() {
           <div className="relative w-48 h-48 md:w-64 md:h-64 mx-auto rounded-full overflow-hidden border-2 border-accent/20 p-2 bg-white">
             <img
               src="/img/grad-02.jpg"
-              alt="Julian Roberts"
+              alt="Samuel Zean III"
               className="w-full h-full object-cover object-top rounded-full"
             />
           </div>

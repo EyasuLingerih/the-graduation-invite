@@ -5,20 +5,21 @@ const details = [
   {
     icon: <Calendar className="w-5 h-5 text-accent" />,
     label: "The Date",
-    value: "June 24th, 2026",
-    sub: "Wednesday afternoon"
+    value: "June 7th, 2026",
+    sub: "Sunday afternoon"
   },
   {
     icon: <Clock className="w-5 h-5 text-accent" />,
     label: "The Time",
-    value: "4:00 PM Sharp",
-    sub: "Ceremony followed by dinner"
+    value: "3:00 PM Sharp",
+    sub: "Ceremony followed by celebration"
   },
   {
     icon: <MapPin className="w-5 h-5 text-accent" />,
     label: "The Venue",
-    value: "The Grand Atrium",
-    sub: "452 Academic Plaza, Suite 10"
+    value: "Osseo Community Center",
+    sub: "415 Central Ave, Osseo, MN 55369",
+    link: "https://maps.app.goo.gl/jtDLEPkK369fzcd26"
   }
 ];
 
@@ -44,7 +45,11 @@ export default function EventDetails() {
               {item.label}
             </h3>
             <p className="font-serif text-2xl mb-1 text-primary">
-              {item.value}
+              {item.link ? (
+                <a href={item.link} target="_blank" rel="noreferrer" className="hover:text-accent transition-colors">
+                  {item.value}
+                </a>
+              ) : item.value}
             </p>
             <p className="font-sans text-xs text-primary/40 italic">
               {item.sub}
