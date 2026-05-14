@@ -11,7 +11,7 @@ const details = [
   {
     icon: <Clock className="w-5 h-5 text-accent" />,
     label: "The Time",
-    value: "3:00 PM Sharp",
+    value: "3PM - 8PM",
     sub: "Ceremony followed by celebration"
   },
   {
